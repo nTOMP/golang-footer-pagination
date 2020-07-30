@@ -5,9 +5,9 @@ import (
 	"strconv"
 )
 
-/*FooterPagination :Esta função utiliza os parâmetros:
-	current_page => página atual
-	total_pages => total de páginas
+/*FooterPagination : Esta função utiliza os parâmetros:
+	currentPage => página atual
+	totalPages => total de páginas
 	boundaries => quantidade de páginas no início e no fim da lista a terem seu número exibido
 	around => quantidade de páginas antes e depois da atual a terem seu número exibido
 para gerar como resultado a lista com os números de páginas e serem exibidos no rodapé, seguindo o padrão:

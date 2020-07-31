@@ -87,6 +87,12 @@ func FooterPagination(currentPage, totalPages, boundaries, around int) string {
 			fmt.Print("... ")
 			ret = ret + "... "
 			printed = true
+			//Se já imprimimos reticências, podemos pular direto para a próxima região
+			if i == initBoundaries+1 {
+				i = initAround - 1
+			} else if i == endAround {
+				i = endBoundaries
+			}
 		}
 	}
 	//Quebra de linha para legibilidade

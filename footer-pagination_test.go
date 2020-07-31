@@ -11,6 +11,7 @@ func TestFooterPagination(t *testing.T) {
 		{4, 10, 2, 2, "1 2 3 4 5 6 ... 9 10"},
 		{13, 13, 0, 0, "... 13"},
 		{13, 30, 3, 5, "1 2 3 ... 8 9 10 11 12 13 14 15 16 17 18 ... 28 29 30"},
+		{3, 14, 0, 0, "... 3 ... "},
 	}
 	for _, c := range cases {
 		got := FooterPagination(c.currentPage, c.totalPages, c.boundaries, c.around)
